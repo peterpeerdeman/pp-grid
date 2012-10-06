@@ -1,0 +1,47 @@
+/* 
+pp-grid
+Author: Peter Peerdeman
+Date: October 2012
+
+A simple, small and responsive CSS grid.
+------------------------------*/
+
+.pp-grid-8,
+.pp-grid-12,
+.pp-grid-16,
+.pp-grid-24 {
+    display: inline;
+    float: left;
+    position:relative;
+    margin-right: 0.5%;
+}
+
+.pp-grid-8 {
+    width:33%;
+}
+
+.pp-grid-12 {
+    width:49.5%;
+}
+
+.pp-grid-16 {
+    width:66.3%;
+}
+
+.pp-grid-24 {
+    width:99%;
+}
+
+.pp-grid-last {
+    margin-right:0;
+}
+
+@media all and (max-width: 480px) {
+    .pp-grid-8,
+    .pp-grid-12,
+    .pp-grid-16 {
+        display:block;
+        float:none;
+        width: 100%;    
+    }
+}
